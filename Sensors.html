@@ -1,0 +1,371 @@
+<html>
+<head>
+<title>Indoor Environment Monitor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+#myInput{
+background-image: url('Search.png');
+background-position: 10px 12px;
+background-repeat:no-repeat;
+width:60%;
+font-size:16px;padding:12px 20px 12px 40px;
+border:1px solid #ddd;margin-bottom:12px;
+}
+#myTable{
+border-collapse:collapse;
+border-left:solid 1 #000000;
+ border-top:solid 1 #000000;
+padding:5px;
+}
+#myTable th{
+border-right:solid 1 #000000;
+border-bottom:solid 1 #000000;
+}
+#myTable td{
+font:normal;
+border-right:solid 1 #000000;
+<br>border-bottom:solid 1 #000000;
+}
+#myTable tr{
+border-bottom: 1px solid #ddd;
+}
+#myTable tr.header,#myTable tr:hover{
+background-color: #f1f1f1;
+}
+</style>
+</head>
+<body bgcolor="#FFF8DC">
+<div align="center">
+<h2>Table of Existing Sensor Data</h2>
+<br/>
+<input type="text" id="myInput" onkeyup="Search()" placeholder="Search">
+<table id="myTable" border="1">
+<tr>
+<th>ID</th>
+<th>Timestamp</th>
+<th>SensorName</th>
+<th>SensorID</th>
+<th>Value</th>
+<th>Unit</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2022-06-11 23:03:24</td>
+<td>WindflowSensor</td>
+<td>3934f390-d6bc-11ec-9012-abb4a1c04821</td>
+<td>2.3000000000000003</td>
+<td>m/s</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>2022-06-11 23:03:24</td>
+<td>WindowSensor</td>
+<td>14ed3b50-d6bc-11ec-9012-abb4a1c04821</td>
+<td>open</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>2022-06-11 23:03:25</td>
+<td>HumiditySensor</td>
+<td>f1d1ace0-b844-11ec-9ad0-4581feddfe15</td>
+<td>35.29</td>
+<td>%</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>2022-06-11 23:03:25</td>
+<td>AirPressureSensor</td>
+<td>dc71c320-b845-11ec-9ad0-4581feddfe15</td>
+<td>101.603</td>
+<td>kPa</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>2022-06-11 23:03:25</td>
+<td>TemperatureSensor</td>
+<td>ba4d75f0-b3f9-11ec-9fc6-c7b4ab98121a</td>
+<td>21.0</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>2022-06-11 23:03:24</td>
+<td>AQISensor</td>
+<td>461deab0-b846-11ec-9ad0-4581feddfe15</td>
+<td>159</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>2022-06-11 23:03:26</td>
+<td>TemperatureSensor2</td>
+<td>d988faa0-e722-11ec-b9ed-3584461e7561</td>
+<td>23.0</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>2022-06-11 23:03:32</td>
+<td>CO2Sensor</td>
+<td>a73f1380-d6bb-11ec-9012-abb4a1c04821</td>
+<td>760</td>
+<td>ppm</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>2022-06-11 23:03:34</td>
+<td>WindflowSensor</td>
+<td>3934f390-d6bc-11ec-9012-abb4a1c04821</td>
+<td>7.1</td>
+<td>m/s</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>2022-06-11 23:03:34</td>
+<td>AQISensor</td>
+<td>461deab0-b846-11ec-9ad0-4581feddfe15</td>
+<td>54</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>2022-06-11 23:03:34</td>
+<td>WindowSensor</td>
+<td>14ed3b50-d6bc-11ec-9012-abb4a1c04821</td>
+<td>open</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>2022-06-11 23:03:35</td>
+<td>TemperatureSensor</td>
+<td>ba4d75f0-b3f9-11ec-9fc6-c7b4ab98121a</td>
+<td>20.1</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>2022-06-11 23:03:35</td>
+<td>AirPressureSensor</td>
+<td>dc71c320-b845-11ec-9ad0-4581feddfe15</td>
+<td>100.897</td>
+<td>kPa</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>2022-06-11 23:03:34</td>
+<td>CO2Sensor</td>
+<td>a73f1380-d6bb-11ec-9012-abb4a1c04821</td>
+<td>379</td>
+<td>ppm</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td>2022-06-11 23:03:35</td>
+<td>HumiditySensor</td>
+<td>f1d1ace0-b844-11ec-9ad0-4581feddfe15</td>
+<td>90.25</td>
+<td>%</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td>2022-06-11 23:03:36</td>
+<td>TemperatureSensor2</td>
+<td>d988faa0-e722-11ec-b9ed-3584461e7561</td>
+<td>20.8</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td>2022-06-11 23:12:24</td>
+<td>WindowSensor</td>
+<td>14ed3b50-d6bc-11ec-9012-abb4a1c04821</td>
+<td>open</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td>2022-06-12 01:51:44</td>
+<td>WindowSensor</td>
+<td>14ed3b50-d6bc-11ec-9012-abb4a1c04821</td>
+<td>open</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td>2022-06-12 01:51:46</td>
+<td>TemperatureSensor2</td>
+<td>d988faa0-e722-11ec-b9ed-3584461e7561</td>
+<td>22.8</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>2022-06-12 01:51:54</td>
+<td>WindflowSensor</td>
+<td>3934f390-d6bc-11ec-9012-abb4a1c04821</td>
+<td>3.8</td>
+<td>m/s</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td>2022-06-12 01:51:54</td>
+<td>AirPressureSensor</td>
+<td>dc71c320-b845-11ec-9ad0-4581feddfe15</td>
+<td>101.187</td>
+<td>kPa</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td>2022-06-12 01:51:54</td>
+<td>WindowSensor</td>
+<td>14ed3b50-d6bc-11ec-9012-abb4a1c04821</td>
+<td>open</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td>2022-06-12 01:51:55</td>
+<td>HumiditySensor</td>
+<td>f1d1ace0-b844-11ec-9ad0-4581feddfe15</td>
+<td>91.16</td>
+<td>%</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td>2022-06-12 01:51:54</td>
+<td>CO2Sensor</td>
+<td>a73f1380-d6bb-11ec-9012-abb4a1c04821</td>
+<td>783</td>
+<td>ppm</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td>2022-06-12 01:51:54</td>
+<td>AQISensor</td>
+<td>461deab0-b846-11ec-9ad0-4581feddfe15</td>
+<td>156</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td>2022-06-12 01:51:55</td>
+<td>TemperatureSensor</td>
+<td>ba4d75f0-b3f9-11ec-9fc6-c7b4ab98121a</td>
+<td>21.3</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td>2022-06-12 01:51:56</td>
+<td>TemperatureSensor2</td>
+<td>d988faa0-e722-11ec-b9ed-3584461e7561</td>
+<td>24.0</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>28</td>
+<td>2022-06-12 01:52:04</td>
+<td>WindflowSensor</td>
+<td>3934f390-d6bc-11ec-9012-abb4a1c04821</td>
+<td>8</td>
+<td>m/s</td>
+</tr>
+
+<tr>
+<td>29</td>
+<td>2022-06-12 01:52:05</td>
+<td>TemperatureSensor</td>
+<td>ba4d75f0-b3f9-11ec-9fc6-c7b4ab98121a</td>
+<td>20.5</td>
+<td>°C</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td>2022-06-12 01:52:05</td>
+<td>AirPressureSensor</td>
+<td>dc71c320-b845-11ec-9ad0-4581feddfe15</td>
+<td>101.351</td>
+<td>kPa</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td>2022-06-12 01:52:05</td>
+<td>HumiditySensor</td>
+<td>f1d1ace0-b844-11ec-9ad0-4581feddfe15</td>
+<td>55.43</td>
+<td>%</td>
+</tr>
+
+<tr>
+<td>32</td>
+<td>2022-06-12 01:52:04</td>
+<td>CO2Sensor</td>
+<td>a73f1380-d6bb-11ec-9012-abb4a1c04821</td>
+<td>876</td>
+<td>ppm</td>
+</tr>
+
+<tr>
+<td>33</td>
+<td>2022-06-12 01:52:05</td>
+<td>AQISensor</td>
+<td>461deab0-b846-11ec-9ad0-4581feddfe15</td>
+<td>108</td>
+<td>N/A</td>
+</tr>
+
+</table>
+<script>
+function Search(){
+var input,filter,table,tr,td,i;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+table = document.getElementById("myTable");
+tr = table.getElementsByTagName("tr");
+
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[2];
+if (td) {
+if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+tr[i].style.display = "";
+} else {
+tr[i].style.display = "none";
+}
+}
+}
+}
+</script>
+<br/><br/></div>
+</body>
+</html>
